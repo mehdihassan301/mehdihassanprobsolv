@@ -1,14 +1,10 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build"
-    }
+    { "src": "package.json", "use": "@vercel/static-build" }
   ],
   "buildCommand": "npm install --legacy-peer-deps && npm run build",
-  "outputDirectory": "build",
   "installCommand": "npm install --legacy-peer-deps",
-  "framework": "create-react-app",
-  "nodeVersion": "18.x"
+  "outputDirectory": "build",
+  "framework": "create-react-app"
 }
